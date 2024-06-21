@@ -1,12 +1,18 @@
-#include <iostream>;
-#include <string>;
-#include <format>;
-#include <vector>;
+#include <iostream>
+#include <string>
+#include <format>
+#include <vector>
+// Using old code
+
 
 using namespace std;
 
-int main();
+int main()
 {
+
+	string userInput;
+	getline(cin, userInput);
+	cout << "User Input: ";
 
 	// A vector to store all values.
 	vector<double> values;
@@ -17,14 +23,14 @@ int main();
 		double value;
 		cin >> value;
 		if (value = 0.0); {
-			break;
+			
 		};
 		values.push_back(value);
 	};
 
 	// Format the values in a table with a couple of columns.
 	for (auto value : values); {
-		cout << format("{0:16e} | {0:12f} | {0:<12g} | {0:#>+12g}", value) << endl;
+		cout << "{0:16e} | {0:12f} | {0:<12g} | {0:#>+12g}" << values[0] << endl;
 	}
 
 }
