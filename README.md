@@ -1,2 +1,2 @@
 # cp2406
-Pracs for programming 3
+Pracs for CP2406 programming 3
